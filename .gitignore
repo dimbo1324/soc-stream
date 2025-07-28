@@ -144,6 +144,7 @@ buck-out/
 ########################################
 # 7. Visual Studio Code
 ########################################
+CppProperties.json
 
 .vscode/
 .vscode-test/
