@@ -1,41 +1,222 @@
-# Prerequisites
-*.d
+########################################
+# 1. Системные файлы
+########################################
 
-# Compiled Object files
-*.slo
-*.lo
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon?
+# Spotlight
+*.Spotlight-V100
+*.Trashes
+# Thumbnails
+._*
+# macOS extended attributes
+*.icloud
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# Linux
+*~ lock
+# Trash folder which might appear on any OS
+.Trash-*
+
+########################################
+# 2. Временные и резервные файлы
+########################################
+
+# Backup files
+*~
+*.bak
+*.swp
+*.swo
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+*.db
+
+# Cache
+*.cache
+*.tmp
+*.temp
+
+# Coverage data
+coverage/
+*.gcda
+*.gcno
+*.gcov
+
+########################################
+# 3. Сборочные артефакты
+########################################
+
+# Object files, libraries and executables
 *.o
 *.obj
+*.so
+*.dylib
+*.dll
+*.exe
+*.out
+*.app
 
-# Precompiled Headers
+# Static libs
+*.a
+*.lib
+
+# Precompiled headers
 *.gch
 *.pch
 
 # Linker files
 *.ilk
+*.map
 
-# Debugger Files
+# Debug info
 *.pdb
-
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
-
-# Fortran module files
-*.mod
-*.smod
-
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
-
-# Executables
-*.exe
-*.out
-*.app
-
-# debug information files
 *.dwo
+
+# Dependency files
+*.d
+
+########################################
+# 4. CMake
+########################################
+
+# Default build folder
+build*/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+CTestTestfile.cmake
+Testing/
+
+# CMake user presets
+CMakeUserPresets.json
+CMakePresets.json
+
+########################################
+# 5. Make, Meson, Ninja, Bazel и др.
+########################################
+
+# GNU make
+*.make
+# Meson
+meson-logs/
+meson.build.gz
+# Ninja
+.build/
+.ninja_deps
+.ninja_log
+# Bazel
+bazel-*
+# Buck
+buck-out/
+# SCons
+.sconsign.dblite
+
+########################################
+# 6. Visual Studio
+########################################
+
+# User-specific files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio 2022
+.vs/
+
+# Build results
+[Bb]in/
+[Oo]bj/
+
+########################################
+# 7. Visual Studio Code
+########################################
+
+.vscode/
+.vscode-test/
+
+# Settings sync
+*.code-workspace
+
+########################################
+# 8. JetBrains (CLion, IntelliJ, Rider и др.)
+########################################
+
+# Project files
+.idea/
+*.iml
+# CMake profiles
+cmake-build-*/
+
+########################################
+# 9. Qt Creator
+########################################
+
+*.pro.user*
+*.qbs.user*
+*.moc
+*.qrc
+*.rcc
+# Qt Creator sessions
+*.session
+
+########################################
+# 10. Others IDEs/editors
+########################################
+
+# Eclipse
+.project
+.metadata/
+.settings/
+# Xcode
+*.xcworkspace
+*.xcuserstate
+*.xcodeproj/*
+!*.xcodeproj/project.pbxproj
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+########################################
+# 11. Конфигурации и ресурсы (оставляем)
+########################################
+
+# Исходники C/C++
+!*.c
+!*.cc
+!*.cpp
+!*.cxx
+!*.h
+!*.hh
+!*.hpp
+!*.hxx
+!*.tpp
+!*.inl
+
+# Скрипты и текстовые ресурсы
+!*.txt
+!*.md
+!*.rst
+!*.json
+!*.xml
+!*.yaml
+!*.yml
+!*.csv
+
+# Проектные файлы (если нужны)
+!CMakeLists.txt
+!meson.build
+!BUILD        # Bazel
